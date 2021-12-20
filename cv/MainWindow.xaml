@@ -34,92 +34,7 @@
                     Width="454"/>
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <Image 
-                    Source="img\01.jpg" 
-                    Stretch="UniformToFill"
-                    Grid.Column="0" 
-                    Grid.Row="1" 
-                    Grid.ColumnSpan="5"/>
-            <StackPanel 
-                Grid.Row="1" 
-                Grid.Column="1" 
-                Grid.ColumnSpan="2" 
-                VerticalAlignment="Center" 
-                HorizontalAlignment="Left">
-                <TextBlock 
-                    FontSize="70px"   
-                    Foreground="White" 
-                    FontWeight="Bold">Alex<LineBreak></LineBreak>Teseira</TextBlock>
-                <TextBlock 
-                    FontSize="25px"   
-                    Foreground="White"
-                    Margin="0 0 0 15">Web Designer and Front-end Developer</TextBlock>
-                <Border 
-                    Background="Transparent"  
-                    BorderBrush="#D3D3D3"
-                    BorderThickness="0 0 0 1" 
-                    Width="565px" 
-                    Padding="0 0 0 20" 
-                    Margin="0 0 0 35px"></Border>
-                <StackPanel 
-                    Orientation="Horizontal">
-                    <Button 
-                        x:Name="fc" 
-                        BorderBrush="Transparent" 
-                        Background="Transparent" 
-                        Style="{StaticResource MyButtonStyle}" >
-                        <Image 
-                            Source="img\fc.png" 
-                            Width="16px" 
-                            Height="16px"
-                            Margin="15px"/>
-                    </Button>
-                    <Button 
-                        x:Name="tw" 
-                        BorderBrush="Transparent" 
-                        Background="Transparent" 
-                        Style="{StaticResource MyButtonStyle}" >
-                        <Image 
-                            Margin="15px"
-                            Source="img\tw.png" 
-                            Width="16px" 
-                            Height="16px"/>
-                    </Button>
-                    <Button 
-                        x:Name="dr" 
-                        BorderBrush="Transparent" 
-                        Background="Transparent" 
-                        Style="{StaticResource MyButtonStyle}" >
-                        <Image 
-                            Source="img\dr.png" 
-                            Width="16px" 
-                            Height="16px"
-                            Margin="15px"/>
-                    </Button>
-                    <Button 
-                        x:Name="bh" 
-                        BorderBrush="Transparent" 
-                        Background="Transparent" 
-                        Style="{StaticResource MyButtonStyle}" >
-                        <Image 
-                            Margin="15px"
-                            Source="img\bh.png" 
-                            Width="16px" 
-                            Height="16px"/>
-                    </Button>
-                    <Button 
-                        x:Name="li" 
-                        BorderBrush="Transparent" 
-                        Background="Transparent" 
-                        Style="{StaticResource MyButtonStyle}" >
-                        <Image 
-                            Margin="15px"
-                            Source="img\li.png" 
-                            Width="16px" 
-                            Height="16px"/>
-                    </Button>
-                </StackPanel>
-            </StackPanel>
+            <!--header сайта с картинкой и меню-->
             <Image 
                 Source="img\logo-dark.png" 
                 Width="64px" Height="22px" 
@@ -180,6 +95,96 @@
                         Text="Contact"></TextBlock>
                 </Button>
             </StackPanel>
+            <!--Картинка на бекграунде-->
+            <Image 
+                    Source="img\01.jpg" 
+                    Stretch="UniformToFill"
+                    Grid.Column="0" 
+                    Grid.Row="1" 
+                    Grid.ColumnSpan="5"/>
+            <!--Текст с именем и деятельностью-->
+            <StackPanel 
+                Grid.Row="1" 
+                Grid.Column="1" 
+                Grid.ColumnSpan="2" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Left">
+                <TextBlock 
+                    FontSize="70px"   
+                    Foreground="White" 
+                    FontWeight="Bold">Alex<LineBreak></LineBreak>Teseira</TextBlock>
+                <TextBlock 
+                    FontSize="25px"   
+                    Foreground="White"
+                    Margin="0 0 0 15">Web Designer and Front-end Developer</TextBlock>
+                <Border 
+                    Background="Transparent"  
+                    BorderBrush="#D3D3D3"
+                    BorderThickness="0 0 0 1" 
+                    Width="565px" 
+                    Padding="0 0 0 20" 
+                    Margin="0 0 0 35px"></Border>
+                <!--иконки на соц сети-->
+                <StackPanel 
+                    Orientation="Horizontal">
+                    <Button 
+                        x:Name="fc" 
+                        BorderBrush="Transparent" 
+                        Background="Transparent" 
+                        Style="{StaticResource MyButtonStyle}" >
+                        <Image 
+                            Source="img\fc.png" 
+                            Width="16px" 
+                            Height="16px"
+                            Margin="15px"/>
+                    </Button>
+                    <Button 
+                        x:Name="tw" 
+                        BorderBrush="Transparent" 
+                        Background="Transparent" 
+                        Style="{StaticResource MyButtonStyle}" >
+                        <Image 
+                            Margin="15px"
+                            Source="img\tw.png" 
+                            Width="16px" 
+                            Height="16px"/>
+                    </Button>
+                    <Button 
+                        x:Name="dr" 
+                        BorderBrush="Transparent" 
+                        Background="Transparent" 
+                        Style="{StaticResource MyButtonStyle}" >
+                        <Image 
+                            Source="img\dr.png" 
+                            Width="16px" 
+                            Height="16px"
+                            Margin="15px"/>
+                    </Button>
+                    <Button 
+                        x:Name="bh" 
+                        BorderBrush="Transparent" 
+                        Background="Transparent" 
+                        Style="{StaticResource MyButtonStyle}" >
+                        <Image 
+                            Margin="15px"
+                            Source="img\bh.png" 
+                            Width="16px" 
+                            Height="16px"/>
+                    </Button>
+                    <Button 
+                        x:Name="li" 
+                        BorderBrush="Transparent" 
+                        Background="Transparent" 
+                        Style="{StaticResource MyButtonStyle}" >
+                        <Image 
+                            Margin="15px"
+                            Source="img\li.png" 
+                            Width="16px" 
+                            Height="16px"/>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <!--Интро-->
             <StackPanel 
                 Grid.Row="2" 
                 Grid.Column="1" 
@@ -197,6 +202,7 @@
                     Foreground="#a6a7aa" 
                     HorizontalAlignment="Right"/>
             </StackPanel>
+            <!--информация о себе-->
             <Grid
                 Grid.Row="2" 
                 Grid.Column="2" 
@@ -221,6 +227,7 @@
                            Width="750"
                            />
             </Grid>
+            <!--Прогресс по языкам-->
             <StackPanel Orientation="Vertical" 
                         Grid.Row="2" Grid.Column="2" 
                         Grid.ColumnSpan="2" 
@@ -228,6 +235,7 @@
                         VerticalAlignment="Bottom"
                         Height="277"
                         Width="750" >
+                <!--PHP-->
                 <Grid>
                     <TextBlock Text="PHP" 
                            FontWeight="Bold" 
@@ -254,6 +262,7 @@
                         Width="97.5"
                         ></Border>
                 </Grid>
+                <!--HTML5-->
                 <Grid>
                     <TextBlock Text="HTML5" 
                            FontWeight="Bold" 
@@ -280,6 +289,7 @@
                         Width="30"
                         ></Border>
                 </Grid>
+                <!--JavaScript-->
                 <Grid>
                     <TextBlock Text="JavaScript" 
                            FontWeight="Bold" 
@@ -306,6 +316,7 @@
                         Width="360"
                         ></Border>
                 </Grid>
+                <!--Photoshop-->
                 <Grid>
                     <TextBlock Text="Photoshop" 
                            FontWeight="Bold" 
@@ -333,11 +344,13 @@
                         ></Border>
                 </Grid>
             </StackPanel>
+            <!--Цвет фона experience-->
             <Grid
                 Grid.Row="3"
                 Grid.Column="0"
                 Grid.ColumnSpan="5"
                 Background="#fafafa"></Grid>
+            <!--Надпись experience-->
             <StackPanel Grid.Row="3" 
                  Grid.Column="1" 
                  VerticalAlignment="Center" 
@@ -355,12 +368,14 @@
                     Foreground="#a6a7aa" 
                     HorizontalAlignment="Right"/>
             </StackPanel>
+            <!--Блоки с языками-->
             <StackPanel Grid.Row="3" 
                         Grid.Column="2" 
                         Grid.ColumnSpan="2" 
                         Orientation="Horizontal" 
                         HorizontalAlignment="Right"
                         VerticalAlignment="Center">
+                <!--HTML5/CSS-->
                 <Button 
                     BorderBrush="Transparent" 
                     Background="White"
@@ -389,6 +404,7 @@
                             TextWrapping="Wrap"></TextBlock>
                     </StackPanel>
                 </Button>
+                <!--Photoshop-->
                 <Button 
                     BorderBrush="Transparent" 
                     Background="#17bed2"
@@ -417,6 +433,7 @@
                             TextWrapping="Wrap"></TextBlock>
                     </StackPanel>
                 </Button>
+                <!--Frontend-->
                 <Button 
                     BorderBrush="Transparent" 
                     Background="White"
@@ -446,6 +463,7 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
+            <!--Надпись Works-->
             <StackPanel Grid.Row="4" 
                  Grid.Column="1" 
                  Height="441">
@@ -462,6 +480,7 @@
                     Foreground="#a6a7aa" 
                     HorizontalAlignment="Right"/>
             </StackPanel>
+            <!--Блок картинок-->
             <StackPanel 
                 Grid.Row="4" 
                 Grid.Column="2" 
@@ -496,11 +515,13 @@
                         MaxWidth="250"/>
                 </StackPanel>
             </StackPanel>
+            <!--Цвет фона-->
             <Grid
                 Grid.Row="5"
                 Grid.Column="0"
                 Grid.ColumnSpan="5"
                 Background="#fafafa"></Grid>
+            <!--Надпись Contacts-->
             <StackPanel Grid.Row="5" 
                  Grid.Column="1"
                  HorizontalAlignment="Right"
@@ -518,6 +539,7 @@
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Right"/>
             </StackPanel>
+            <!--Контакты-->
             <StackPanel 
                 Grid.Row="5" 
                 Grid.Column="2" 
@@ -526,6 +548,7 @@
                 VerticalAlignment="Center"
                 HorizontalAlignment="Right"
                 Width="750">
+                <!--Location-->
                 <StackPanel
                     Width="195"
                     >
@@ -547,6 +570,7 @@
                             Foreground="#81848f"/>
                     </Button>
                 </StackPanel>
+                <!--Phone-->
                 <StackPanel
                     Width="195">
                     <TextBlock  
@@ -567,6 +591,7 @@
                             Foreground="#81848f"/>
                     </Button>
                 </StackPanel>
+                <!--email-->
                 <StackPanel
                     Width="195">
                     <TextBlock  
@@ -587,6 +612,7 @@
                             Foreground="#81848f"/>
                     </Button>
                 </StackPanel>
+                <!--web-->
                 <StackPanel
                     Width="195">
                     <TextBlock  
@@ -608,6 +634,8 @@
                     </Button>
                 </StackPanel>
             </StackPanel>
+            <!--footer-->
+            <!--картинка-->
             <Image 
                 Source="img\logo-dark.png" 
                 Width="64px" Height="22px" 
